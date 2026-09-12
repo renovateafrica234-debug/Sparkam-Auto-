@@ -1,6 +1,6 @@
 {
-  "name": "Sparkam Auto-Publisher",
-  "description": "One-tap Instagram business publisher and CRM for @sparkam.media and @zeeteroliver in Abuja WAT with Meta AI webhook and Google Sheets sync.",
+  "name": "sparkam-auto",
+  "description": "Sparkam Auto Live - App ID 1408305487572055",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
