@@ -1,0 +1,32 @@
+{
+  "series": "Drift Bami",
+  "episode": "EP2",
+  "title": "Drift Bami EP2: Zuma Rock Climbing Challenge",
+  "location": "Zuma Rock, Madalla, Abuja environs (WAT)",
+  "account": "zeeteroliver",
+  "collaborator": "sparkam.media",
+  "description": "Raw behind-the-scenes endurance climb at the monolithic Zuma Rock. High energy reels, aerial drone shots, gear checks, and motivational hook for young Nigerian creators.",
+  "suggested_hook": "We took 3 cameras and zero safety ropes halfway up Zuma Rock at 6 AM...",
+  "suggested_caption": "Zuma Rock has stood guard over Abuja for millennia, but very few have seen the crest from this angle. 🧗‍♂️🇳🇬\n\nDrift Bami EP2 is officially in the vault. When we started Sparkam Media, everyone said high-production adventure content couldn't be sustained locally in Abuja without 7-figure foreign gear.\n\nWe shot this whole 12-minute breakdown on an iPhone 15 Pro, a DJI Mini 3, and raw grit.\n\nEpisode 2 drops this Sunday. Drop a 🧗‍♂️ if you're ready for the full drone sequence!\n\n#DriftBami #ZumaRock #AbujaCreators #AbujaHikes #SparkamMedia #VisitAbuja",
+  "hashtags": ["#DriftBami", "#ZumaRock", "#AbujaHikes", "#SparkamMedia", "#AbujaCreators"],
+  "media": [
+    {
+      "type": "image",
+      "name": "zuma_rock_face_ascent.jpg",
+      "description": "ZEE ZAIN navigating rocky outcrop beneath the iconic Zuma rock face at dawn",
+      "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&auto=format&fit=crop&q=80"
+    },
+    {
+      "type": "image",
+      "name": "zuma_rock_drone_summit.jpg",
+      "description": "Dramatic aerial wide angle overlooking the Abuja-Kaduna expressway and Zuma monolith",
+      "url": "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1200&auto=format&fit=crop&q=80"
+    },
+    {
+      "type": "video_reel",
+      "name": "drift_bami_ep2_reel_cut.mp4",
+      "description": "60-second high BPM reel cut teaser with WAT sunset grade",
+      "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+    }
+  ]
+}
