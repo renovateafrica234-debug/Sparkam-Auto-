@@ -18,6 +18,7 @@ export const authOptions = {
     }),
   ],
   secret: process.env.NEXTAUTH_SECRET,
+  callbacks: { async signIn(){ return true } }
 }
 const handler = NextAuth(authOptions)
 export { handler as GET, handler as POST }
