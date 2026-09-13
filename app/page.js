@@ -1,38 +1,37 @@
-export default function HomePage() {
+"use client";
+import { useSession, signIn, signOut } from "next-auth/react";
+import { useEffect } from "react";
+
+export default function Home() {
+  const { data: session, status } = useSession();
+
+  useEffect(() => {
+    if (window.location.hash === "#_=_") {
+      window.history.replaceState(null, "", window.location.pathname);
+    }
+  }, []);
+
+  if (status === "loading") return null;
+
   return (
-    <main style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '2rem' }}>
-      <h1 style={{ fontSize: '1.75rem', fontWeight: 'bold', marginBottom: '1.5rem', textAlign: 'center' }}>
-        Sparkam Auto Live - App ID 1408305487572055
-      </h1>
-      <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
-        <a
-          href="/api/auth/signin"
-          style={{
-            padding: '0.75rem 1.5rem',
-            backgroundColor: '#00FF85',
-            color: '#000000',
-            fontWeight: '600',
-            borderRadius: '6px',
-            textDecoration: 'none'
-          }}
-        >
-          Sign In (/api/auth/signin)
-        </a>
-        <a
-          href="/api/post"
-          style={{
-            padding: '0.75rem 1.5rem',
-            backgroundColor: '#222222',
-            color: '#FFFFFF',
-            fontWeight: '600',
-            borderRadius: '6px',
-            textDecoration: 'none',
-            border: '1px solid #444444'
-          }}
-        >
-          Check Status (/api/post)
-        </a>
+    <div style={{ background: "black", color: "white", minHeight: "100vh", display: "grid", placeItems: "center" }}>
+      <div style={{ textAlign: "center" }}>
+        <h1>Sparkam Auto Live - App ID 1408305487572055</h1>
+
+        {session ? (
+          <>
+            <img src={session.user?.image} alt="profile" style={{ width: 80, height: 80, borderRadius: 999, margin: "20px auto", display: "block" }} />
+            <p>Welcome {session.user?.name}</p>
+            <button onClick={() => signOut()} style={{ marginTop: 12, padding: "10px 18px", cursor: "pointer" }}>
+              Sign Out
+            </button>
+          </>
+        ) : (
+          <button onClick={() => signIn("facebook")} style={{ background: "#22ff88", color: "black", padding: "12px 20px", borderRadius: 8, cursor: "pointer", marginTop: 20, fontWeight: "bold" }}>
+            Sign In with Facebook
+          </button>
+        )}
       </div>
-    </main>
+    </div>
   );
-}
+          }
